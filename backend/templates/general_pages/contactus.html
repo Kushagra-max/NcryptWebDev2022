@@ -1,0 +1,56 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %} 
+    <title>Alphabet</title>
+    <style>
+        .container {
+          
+  position: relative;
+  height: 600;
+  max-width:100%;
+  padding-left:100px;
+
+  
+
+  /* extra style to center the content */
+}
+
+.container:before {
+  content: "";
+  background-image: url("/static/images/background.webp");
+  position: absolute;
+  height:1000px;
+  max-width:100% !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .3;
+}
+
+    </style>
+{% endblock %} 
+
+{% block content %} 
+    <div class="container">
+        
+        <h1 style="text-align: center;">Contact Us</h1> 
+        <form>
+            <label>What can we help you with?</label><br>
+            <input type="text"><br>
+          </form>
+          <form>
+            <p>Chose how to best describe your issue.</p>
+            <input type="checkbox" name="Lorem ipsum dolor sit amet" >
+            <label> </label><br>
+            <input type="checkbox" name = "Lorem ipsum dolor sit amet">
+            <label></label><br>
+            <input type="checkbox" name = "Lorem ipsum dolor sit amet">
+            <label></label>
+          </form>
+          <a href="contactus/done">Submit</a>
+       
+    </div>
+{% endblock %} 

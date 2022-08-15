@@ -1,0 +1,110 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %} 
+    <title>Alphabet</title>
+    <style>
+        .container {
+            text-align: center ;
+  position: relative;
+  max-width:100%;
+  padding-left:200px;
+  padding-right:200px;
+  padding-top:100px;
+  
+
+  /* extra style to center the content */
+}
+
+.container:before {
+  content: "";
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("/static/images/ourservices.png");
+  position: absolute;
+  height:500px;
+  max-width:100% !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .2;
+}
+main{
+    text-align: center;
+    display:block;
+}
+
+
+    </style>
+{% endblock %} 
+
+{% block content %} 
+    <div class="container">
+        <h1 id="main">Alphabet.inc offers a wide range of tools and platforms</h1>
+        <p style="font-weight: 400;">Our mission to make the world around you universally accessible and useful.</p>
+        <div id="subh" style="margin-top: 200px;">
+            <h2 style="text-align:center;">All of our companies, A-Z</h2>
+            <img src = "/static/images/bostonlogo.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            size:120px">
+            <p style="font-weight: 200;text-align: center;">Boston Dynamics builds advanced robotics, most of them mimicking animal-like behaviour, such as Spot, its dog robot.</p>
+            <img src = "/static/images/Calico.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;"
+            >
+            <p style="font-weight: 200;text-align: center;">Calico, or the California Life Company is concernced with combating ageing and associated diseases.</p>
+            <img src = "/static/images/capitalg.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;">
+            <p style="font-weight: 200;text-align: center;">Capital is a venture-capital fund that focuses on companies in the late stage of growth.</p>
+            <img src = "/static/images/deepmind.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;">
+            <p style="font-weight: 200;text-align: center;">DeepMind is an artificial intelligence and general-purpose learning algorithm company. </p>
+            <img src = "/static/images/googlefiber.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;">
+            <p style="font-weight: 200;text-align: center;">Fiber provides fiber-to-the-premises service in the United States </p>
+            
+            <img src = "/static/images/google.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;">
+            <p style="font-weight: 200;text-align: center;">Google LLC is an American multinational technology company </p>
+            <img src = "/static/images/verily.jpeg" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;">
+            <p style="font-weight: 200;text-align: center;">Verily Life Sciences, also known as Verily, is Alphabet Inc.'s research organization devoted to the study of life sciences.</p>
+            <img src = "/static/images/nest.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            height: 140px;
+            width: 300px;">
+            <p style="font-weight: 200;text-align: center;">Nest is a line of smart home products including smart speakers, smart displays, streaming devices, thermostats, smoke detectors, routers and security systems
+            </p>
+            <img src = "/static/images/ventures.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            height: 140px;
+            width: 200px;">
+            <p style="font-weight: 200;text-align: center;">Ventures is a venture-capital fund that invests mostly in startups
+            </p>
+            <img src = "/static/images/xlabs.png" style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;">
+            <p style="font-weight: 200;text-align: center;">X Lab is our top-secret research laboratory that invents and launches "moonshot" technologies that aim to make the world a better place.
+            </p>
+        </div>
+    </div>
+{% endblock %} 

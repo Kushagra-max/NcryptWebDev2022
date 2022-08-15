@@ -1,0 +1,40 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %} 
+    <title>Alphabet</title>
+    <style>
+        .container {
+          
+  position: relative;
+  height: 600;
+  max-width:100%;
+  padding-left:100px;
+  padding-top:100px;
+  
+
+  /* extra style to center the content */
+}
+
+.container:before {
+  content: "";
+  background-image: url("/static/images/background.webp");
+  position: absolute;
+  height:1000px;
+  max-width:100% !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .3;
+}
+
+    </style>
+{% endblock %} 
+
+{% block content %} 
+    <div class="container">
+        <h1>Thank you for your feedback!</h1>
+    </div>
+{% endblock %} 
